@@ -59,7 +59,7 @@ Currently, the arguments are:
     `pair, profit_ratio, profit_abs, open_date, open_rate, fee_open, close_date, close_rate, fee_close, amount, trade_duration, is_open, sell_reason, stake_amount, min_rate, max_rate, stop_loss_ratio, stop_loss_abs`
 * `trade_count`: Amount of trades (identical to `len(results)`)
 * `min_date`: Start date of the timerange used
-* `min_date`: End date of the timerange used
+* `max_date`: End date of the timerange used
 * `config`: Config object used (Note: Not all strategy-related parameters will be updated here if they are part of a hyperopt space).
 * `processed`: Dict of Dataframes with the pair as keys containing the data used for backtesting.
 * `backtest_stats`: Backtesting statistics using the same format as the backtesting file "strategy" substructure. Available fields can be seen in `generate_strategy_stats()` in `optimize_reports.py`.
